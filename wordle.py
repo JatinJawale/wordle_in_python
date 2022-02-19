@@ -80,7 +80,9 @@ def compare(guess, target):
     if guess == target:
         for j in range(len(guess)):
             clrprint(guess[j] + " ", end='', clr = 'green')
-        print("\n\nThat's right! You guessed '{}' correctly!".format(guess))
+        print("\n\nThat's right! You guessed ", end = '')
+        clrprint(target, end = '', clr = 'green')
+        print(" correctly!")
         solved = True
     else:
         for j in range(len(guess)):
