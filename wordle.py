@@ -114,7 +114,7 @@ def play():
         guess = input("\nGuess {}: ".format(i + 1)).upper()
 
         while not is_valid_guess(guess):
-            print("{} is not a valid word!".format(guess))
+            print("{} is not a valid input!".format(guess))
             guess = input("\nGuess {}: ".format(i + 1)).upper()
             if is_valid_guess(guess):
                 break
